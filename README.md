@@ -1,5 +1,8 @@
 ## Hi there 👋
 
+### 🐍 Snake eating my contributions
+
+![snake gif](https://github.com/naaufal/naaufal/blob/output/github-contribution-grid-snake.svg)
 <!--
 **Naaufal/naaufal** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
