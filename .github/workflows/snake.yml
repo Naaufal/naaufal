@@ -2,7 +2,7 @@ name: Generate Snake Animation
 
 on:
   schedule:
-    - cron: "0 0 * * *" # update setiap hari jam 00:00 UTC
+    - cron: "0 0 * * *" # setiap hari jam 00:00 UTC
   workflow_dispatch:
 
 jobs:
@@ -15,7 +15,7 @@ jobs:
       - name: Generate the snake animation
         uses: Platane/snk@v3
         with:
-          github_user_name: naaufal
+          github_user_name: Naaufal
           outputs: |
             dist/github-contribution-grid-snake.svg
 
