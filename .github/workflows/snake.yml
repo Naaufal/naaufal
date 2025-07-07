@@ -19,16 +19,16 @@ jobs:
           outputs: |
             dist/github-contribution-grid-snake.svg
 
-      - name: Pull before pushing
+      - name: Setup Git credentials
         run: |
-          git config --global user.email "github-actions@github.com"
           git config --global user.name "github-actions"
-          git pull origin main || true
+          git config --global user.email "github-actions@github.com"
 
-      - name: Push the generated animation
-        uses: EndBug/add-and-commit@v9
-        with:
-          author_name: github-actions
-          author_email: github-actions@github.com
-          message: "generated snake 🐍"
-          add: "dist/github-contribution-grid-snake.svg"
+      - name: Pull latest from main
+        run: git pull origin main --rebase
+
+      - name: Commit and push
+        run: |
+          git add dist/github-contribution-grid-snake.svg
+          git commit -m "generated snake 🐍" || echo "No changes to commit"
+          git push origin main
