@@ -31,4 +31,4 @@ jobs:
         run: |
           git add dist/github-contribution-grid-snake.svg
           git commit -m "generated snake 🐍" || echo "No changes to commit"
-          git push origin main
+          git push origin main --force
