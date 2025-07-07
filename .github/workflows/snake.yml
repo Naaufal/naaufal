@@ -9,8 +9,10 @@ jobs:
   generate:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Checkout (full history)
         uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
 
       - name: Generate the snake animation
         uses: Platane/snk@v3
@@ -19,16 +21,18 @@ jobs:
           outputs: |
             dist/github-contribution-grid-snake.svg
 
-      - name: Setup Git credentials
+      - name: Setup Git config
         run: |
           git config --global user.name "github-actions"
           git config --global user.email "github-actions@github.com"
 
-      - name: Pull latest from main
-        run: git pull origin main --rebase
+      - name: Pull latest changes from main
+        run: |
+          git remote set-url origin https://x-access-token:${{ secrets.PAT }}@github.com/Naaufal/Naaufal.git
+          git pull origin main --rebase
 
-      - name: Commit and push
+      - name: Commit and Push
         run: |
           git add dist/github-contribution-grid-snake.svg
-          git commit -m "generated snake 🐍" || echo "No changes to commit"
-          git push origin main --force
+          git commit -m "generated snake 🐍" || echo "no changes to commit"
+          git push origin main
