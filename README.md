@@ -24,34 +24,10 @@
 ### Frameworks & Libraries
 ![React](https://img.shields.io/badge/-React-61DAFB?style=flat-square&logo=react&logoColor=black)
 ![Node.js](https://img.shields.io/badge/-Node.js-339933?style=flat-square&logo=node.js&logoColor=white)
-![Express](https://img.shields.io/badge/-Express-000000?style=flat-square&logo=express&logoColor=white)
+![Boootstrap]([https://img.shields.io/badge/-Express-000000?style=flat-square&logo=express&logoColor=white](https://img.shields.io/badge/Style-Bootstrap-7952B3?logo=bootstrap&logoColor=white)
 
 ### Tools & Technologies
 ![Git](https://img.shields.io/badge/-Git-F05032?style=flat-square&logo=git&logoColor=white)
 ![VS Code](https://img.shields.io/badge/-VS%20Code-007ACC?style=flat-square&logo=visual-studio-code&logoColor=white)
-![MongoDB](https://img.shields.io/badge/-MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white)
+![Mysql]([https://img.shields.io/badge/-MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white](https://img.shields.io/badge/Database-MySQL-blue?logo=mysql&logoColor=white)
 
-<div class="snake-container">
-  <div class="snake"></div>
-</div>
-
-<style>
-.snake-container {
-  width: 100%;
-  height: 100px;
-  overflow: hidden;
-  position: relative;
-}
-.snake {
-  width: 20px;
-  height: 20px;
-  background: #00ff00;
-  position: absolute;
-  animation: move 5s infinite linear;
-}
-@keyframes move {
-  0% { left: -20px; top: 50%; }
-  50% { left: 50%; top: 50%; }
-  100% { left: 100%; top: 50%; }
-}
-</style>
