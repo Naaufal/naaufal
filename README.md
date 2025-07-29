@@ -31,54 +31,27 @@
 ![VS Code](https://img.shields.io/badge/-VS%20Code-007ACC?style=flat-square&logo=visual-studio-code&logoColor=white)
 ![MongoDB](https://img.shields.io/badge/-MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white)
 
-## 📊 GitHub Stats
-
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Naaufal&show_icons=true&theme=radical&hide_border=true" alt="Naaufal's GitHub Stats" />
+<div class="snake-container">
+  <div class="snake"></div>
 </div>
 
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Naaufal&layout=compact&theme=radical&hide_border=true" alt="Top Languages" />
-</div>
-
-<div align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Naaufal&theme=radical&hide_border=true" alt="GitHub Streak" />
-</div>
-
-## 🐍 Contribution Snake
-![Snake animation](https://github.com/Naaufal/Naaufal/blob/output/github-contribution-grid-snake.svg)
-
-## 🎯 Current Focus
-
-- 🌟 Building more JavaScript projects
-- 📚 Learning React and Node.js ecosystem
-- 🎨 Improving UI/UX skills
-- 🚀 Contributing to open source
-
-## 📈 Activity Graph
-![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=Naaufal&theme=react-dark&hide_border=true)
-
-## 🤝 Connect With Me
-
-<div align="center">
-  
-[![LinkedIn](https://img.shields.io/badge/-LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/your-profile)
-[![Twitter](https://img.shields.io/badge/-Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/your-handle)
-[![Portfolio](https://img.shields.io/badge/-Portfolio-FF5722?style=for-the-badge&logo=google-chrome&logoColor=white)](https://your-portfolio.com)
-[![Email](https://img.shields.io/badge/-Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:n.naaufal@example.com)
-
-</div>
-
----
-
-<div align="center">
-  <img src="https://komarev.com/ghpvc/?username=Naaufal&color=blueviolet&style=flat-square&label=Profile+Views" alt="Profile Views" />
-</div>
-
-<div align="center">
-  
-**Thanks for visiting! 😄**
-
-*"Code is like humor. When you have to explain it, it's bad."* – Cory House
-
-</div>
+<style>
+.snake-container {
+  width: 100%;
+  height: 100px;
+  overflow: hidden;
+  position: relative;
+}
+.snake {
+  width: 20px;
+  height: 20px;
+  background: #00ff00;
+  position: absolute;
+  animation: move 5s infinite linear;
+}
+@keyframes move {
+  0% { left: -20px; top: 50%; }
+  50% { left: 50%; top: 50%; }
+  100% { left: 100%; top: 50%; }
+}
+</style>
